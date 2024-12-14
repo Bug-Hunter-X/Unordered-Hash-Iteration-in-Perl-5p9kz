@@ -1,0 +1,1 @@
+use strict; use warnings; use List::Util qw(shuffle); my %hash = (a => 1, b => 2, c => 3); # If order matters, sort the keys my @sortedKeys = sort keys %hash; foreach my $key (@sortedKeys) { print "$key => $hash{$key}\n"; } # Or, if you need a random order my @shuffledKeys = shuffle keys %hash; foreach my $key (@shuffledKeys) { print "$key => $hash{$key}\n"; }
